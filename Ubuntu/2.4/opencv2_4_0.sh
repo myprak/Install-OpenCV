@@ -11,9 +11,11 @@ echo "Removing any pre-installed ffmpeg and x264"
 sudo apt-get remove remove ffmpeg x264 libx264-dev
 echo "Installing Dependenices"
 sudo apt-get install libopencv-dev
+# only checkinstall and yasm needed
 sudo apt-get install build-essential checkinstall cmake pkg-config yasm
 sudo apt-get install libtiff4-dev libjpeg-dev libjasper-dev
 sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libdc1394-22-dev libxine-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libv4l-dev
+# think there may be conflict defer python-numpy for the moment
 sudo apt-get install python-dev python-numpy
 sudo apt-get install libtbb-dev
 sudo apt-get install libqt4-dev libgtk2.0-dev
